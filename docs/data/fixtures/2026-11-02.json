@@ -1,0 +1,121 @@
+{
+  "matches": [
+    {
+      "away": "Brest",
+      "fl": "Near coin-flip on the result. Double-chance picks pay low odds even when they land.",
+      "home": "Lorient",
+      "league": "France - Ligue 1",
+      "n": "Lorient drew 0-0 at Angers; Brest lost 1-2 to Nice.",
+      "p": [
+        37,
+        30,
+        33
+      ],
+      "picks": [
+        {
+          "c": 67,
+          "l": "Home or draw",
+          "w": "Coin-flip on the result, so the slight favourite or a draw is the safest cover."
+        },
+        {
+          "c": 65,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.1 (xG 1.1-1.0). Goals leans have been unreliable so far."
+        },
+        {
+          "c": 58,
+          "l": "Both teams not to score",
+          "w": "Expected total goals 2.1 (xG 1.1-1.0)."
+        }
+      ],
+      "time": "20:45",
+      "xg": [
+        1.1,
+        1
+      ],
+      "z": [
+        33,
+        37
+      ]
+    },
+    {
+      "away": "Everton",
+      "fl": "Double-chance picks pay low odds even when they land.",
+      "home": "Newcastle United",
+      "league": "England - Premier League",
+      "n": "Newcastle won 2-0 at Palace; Everton lost 0-2 at Arsenal.",
+      "p": [
+        42,
+        27,
+        31
+      ],
+      "picks": [
+        {
+          "c": 69,
+          "l": "Home or draw",
+          "w": "Blend 42/27/31: not strong enough for an outright win pick."
+        },
+        {
+          "c": 42,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 54,
+          "l": "Both teams to score",
+          "w": "Expected total goals 2.7 (xG 1.5-1.2)."
+        }
+      ],
+      "time": "21:00",
+      "xg": [
+        1.5,
+        1.2
+      ],
+      "z": [
+        22,
+        30
+      ]
+    },
+    {
+      "away": "Osasuna",
+      "fl": "Double-chance picks pay low odds even when they land.",
+      "home": "Deportivo La Coruña",
+      "league": "Spain - LaLiga",
+      "n": "Deportivo lost 0-1 at Atlético; Osasuna lost 0-2 at Sevilla.",
+      "p": [
+        42,
+        30,
+        28
+      ],
+      "picks": [
+        {
+          "c": 72,
+          "l": "Home or draw",
+          "w": "Blend 42/30/28: not strong enough for an outright win pick."
+        },
+        {
+          "c": 42,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 65,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.1 (xG 1.2-0.9)."
+        }
+      ],
+      "time": "21:00",
+      "xg": [
+        1.2,
+        0.9
+      ],
+      "z": [
+        30,
+        41
+      ]
+    }
+  ],
+  "method": "Live win-probability feed blended with recent results and xG estimates",
+  "tz": "WAT",
+  "updated": "2026-10-29"
+}

@@ -1,0 +1,615 @@
+{
+  "matches": [
+    {
+      "away": "Venezia",
+      "fl": "",
+      "home": "Como",
+      "league": "Italy - Serie A",
+      "n": "Como won 3-1 at Torino; Venezia lost 0-2 at home to Inter.",
+      "p": [
+        68,
+        19,
+        13
+      ],
+      "picks": [
+        {
+          "c": 68,
+          "l": "Home win",
+          "w": "Blend gives 68/19/13 and the xG edge backs the home side."
+        },
+        {
+          "c": 78,
+          "l": "Home or draw",
+          "w": "Covers the draw if the win slips; lower price."
+        },
+        {
+          "c": 55,
+          "l": "Over 2.5 goals",
+          "w": "Expected total goals 2.9 (xG 2.1-0.8)."
+        }
+      ],
+      "time": "12:30",
+      "xg": [
+        2.1,
+        0.8
+      ],
+      "z": [
+        12,
+        45
+      ]
+    },
+    {
+      "away": "Sevilla",
+      "fl": "Low-scoring, cagey matchup. Double-chance picks pay low odds even when they land.",
+      "home": "Getafe",
+      "league": "Spain - LaLiga",
+      "n": "Getafe lost 0-4 at Athletic; Sevilla beat Osasuna 2-0.",
+      "p": [
+        29,
+        32,
+        39
+      ],
+      "picks": [
+        {
+          "c": 71,
+          "l": "Away or draw",
+          "w": "Blend 29/32/39: not strong enough for an outright win pick."
+        },
+        {
+          "c": 39,
+          "l": "Away win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 70,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 1.9 (xG 0.9-1.0)."
+        }
+      ],
+      "time": "14:00",
+      "xg": [
+        0.9,
+        1
+      ],
+      "z": [
+        41,
+        37
+      ]
+    },
+    {
+      "away": "Torino",
+      "fl": "Frosinone have a short turnaround. Double-chance picks pay low odds even when they land.",
+      "home": "Frosinone",
+      "league": "Italy - Serie A",
+      "n": "Frosinone play on Thursday too; Torino lost 1-3 at home to Como.",
+      "p": [
+        40,
+        27,
+        33
+      ],
+      "picks": [
+        {
+          "c": 67,
+          "l": "Home or draw",
+          "w": "Blend 40/27/33: not strong enough for an outright win pick."
+        },
+        {
+          "c": 40,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 57,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.4 (xG 1.3-1.1)."
+        }
+      ],
+      "time": "15:00",
+      "xg": [
+        1.3,
+        1.1
+      ],
+      "z": [
+        27,
+        33
+      ]
+    },
+    {
+      "away": "Cagliari",
+      "fl": "",
+      "home": "Lazio",
+      "league": "Italy - Serie A",
+      "n": "Lazio won 6-2 at Sassuolo; Cagliari lost 2-4 at Roma.",
+      "p": [
+        63,
+        22,
+        15
+      ],
+      "picks": [
+        {
+          "c": 63,
+          "l": "Home win",
+          "w": "Blend gives 63/22/15 and the xG edge backs the home side."
+        },
+        {
+          "c": 78,
+          "l": "Home or draw",
+          "w": "Covers the draw if the win slips; lower price."
+        },
+        {
+          "c": 55,
+          "l": "Over 2.5 goals",
+          "w": "Expected total goals 2.9 (xG 2.0-0.9)."
+        }
+      ],
+      "time": "15:00",
+      "xg": [
+        2,
+        0.9
+      ],
+      "z": [
+        14,
+        41
+      ]
+    },
+    {
+      "away": "Auxerre",
+      "fl": "Double-chance picks pay low odds even when they land.",
+      "home": "Strasbourg",
+      "league": "France - Ligue 1",
+      "n": "Strasbourg lost 0-3 at Rennes; Auxerre drew 1-1 with Le Mans.",
+      "p": [
+        48,
+        26,
+        26
+      ],
+      "picks": [
+        {
+          "c": 74,
+          "l": "Home or draw",
+          "w": "Blend 48/26/26: not strong enough for an outright win pick."
+        },
+        {
+          "c": 48,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 57,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.4 (xG 1.4-1.0)."
+        }
+      ],
+      "time": "15:00",
+      "xg": [
+        1.4,
+        1
+      ],
+      "z": [
+        25,
+        37
+      ]
+    },
+    {
+      "away": "1. FC Köln",
+      "fl": "Near coin-flip on the result. Double-chance picks pay low odds even when they land.",
+      "home": "Union Berlin",
+      "league": "Germany - Bundesliga",
+      "n": "Union drew 1-1 at Augsburg; Köln drew 0-0 with Schalke.",
+      "p": [
+        38,
+        28,
+        34
+      ],
+      "picks": [
+        {
+          "c": 66,
+          "l": "Home or draw",
+          "w": "Coin-flip on the result, so the slight favourite or a draw is the safest cover."
+        },
+        {
+          "c": 60,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.3 (xG 1.2-1.1). Goals leans have been unreliable so far."
+        },
+        {
+          "c": 53,
+          "l": "Both teams not to score",
+          "w": "Expected total goals 2.3 (xG 1.2-1.1)."
+        }
+      ],
+      "time": "15:30",
+      "xg": [
+        1.2,
+        1.1
+      ],
+      "z": [
+        30,
+        33
+      ]
+    },
+    {
+      "away": "Real Madrid",
+      "fl": "",
+      "home": "Racing Santander",
+      "league": "Spain - LaLiga",
+      "n": "Racing beat Espanyol 2-1; Real Madrid won 2-1 at Barcelona.",
+      "p": [
+        10,
+        14,
+        76
+      ],
+      "picks": [
+        {
+          "c": 76,
+          "l": "Away win",
+          "w": "Blend gives 10/14/76 and the xG edge backs the away side."
+        },
+        {
+          "c": 78,
+          "l": "Away or draw",
+          "w": "Covers the draw if the win slips; lower price."
+        },
+        {
+          "c": 60,
+          "l": "Over 2.5 goals",
+          "w": "Expected total goals 3.1 (xG 0.7-2.4)."
+        }
+      ],
+      "time": "16:15",
+      "xg": [
+        0.7,
+        2.4
+      ],
+      "z": [
+        50,
+        9
+      ]
+    },
+    {
+      "away": "Angers",
+      "fl": "",
+      "home": "Lyon",
+      "league": "France - Ligue 1",
+      "n": "Lyon lost 0-2 at PSG; Angers drew 0-0 with Lorient.",
+      "p": [
+        64,
+        21,
+        15
+      ],
+      "picks": [
+        {
+          "c": 64,
+          "l": "Home win",
+          "w": "Blend gives 64/21/15 and the xG edge backs the home side."
+        },
+        {
+          "c": 78,
+          "l": "Home or draw",
+          "w": "Covers the draw if the win slips; lower price."
+        },
+        {
+          "c": 53,
+          "l": "Over 2.5 goals",
+          "w": "Expected total goals 2.8 (xG 2.0-0.8)."
+        }
+      ],
+      "time": "17:15",
+      "xg": [
+        2,
+        0.8
+      ],
+      "z": [
+        14,
+        45
+      ]
+    },
+    {
+      "away": "Monaco",
+      "fl": "Near coin-flip on the result. Double-chance picks pay low odds even when they land.",
+      "home": "Paris FC",
+      "league": "France - Ligue 1",
+      "n": "Paris FC lost 1-2 at Lens; Monaco drew 1-1 with Lille.",
+      "p": [
+        38,
+        28,
+        34
+      ],
+      "picks": [
+        {
+          "c": 66,
+          "l": "Home or draw",
+          "w": "Coin-flip on the result, so the slight favourite or a draw is the safest cover."
+        },
+        {
+          "c": 53,
+          "l": "Both teams to score",
+          "w": "Expected total goals 2.6 (xG 1.3-1.3). Goals leans have been unreliable so far."
+        },
+        {
+          "c": 52,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.6 (xG 1.3-1.3)."
+        }
+      ],
+      "time": "17:15",
+      "xg": [
+        1.3,
+        1.3
+      ],
+      "z": [
+        27,
+        27
+      ]
+    },
+    {
+      "away": "Arsenal",
+      "fl": "Top-of-table clash; close to a coin-flip. Double-chance picks pay low odds even when they land.",
+      "home": "Liverpool",
+      "league": "England - Premier League",
+      "n": "Liverpool won 2-0 against Brighton; Arsenal won 2-0 against Everton.",
+      "p": [
+        31,
+        28,
+        41
+      ],
+      "picks": [
+        {
+          "c": 69,
+          "l": "Away or draw",
+          "w": "Blend 31/28/41: not strong enough for an outright win pick."
+        },
+        {
+          "c": 41,
+          "l": "Away win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 53,
+          "l": "Both teams to score",
+          "w": "Expected total goals 2.6 (xG 1.2-1.4)."
+        }
+      ],
+      "time": "17:30",
+      "xg": [
+        1.2,
+        1.4
+      ],
+      "z": [
+        30,
+        25
+      ]
+    },
+    {
+      "away": "Hamburger SV",
+      "fl": "",
+      "home": "Eintracht Frankfurt",
+      "league": "Germany - Bundesliga",
+      "n": "Frankfurt lost 0-1 at Dortmund; Hamburg lost 0-1 at Paderborn.",
+      "p": [
+        57,
+        22,
+        21
+      ],
+      "picks": [
+        {
+          "c": 57,
+          "l": "Home win",
+          "w": "Blend gives 57/22/21 and the xG edge backs the home side."
+        },
+        {
+          "c": 78,
+          "l": "Home or draw",
+          "w": "Covers the draw if the win slips; lower price."
+        },
+        {
+          "c": 56,
+          "l": "Both teams to score",
+          "w": "Expected total goals 2.9 (xG 1.8-1.1)."
+        }
+      ],
+      "time": "17:30",
+      "xg": [
+        1.8,
+        1.1
+      ],
+      "z": [
+        17,
+        33
+      ]
+    },
+    {
+      "away": "Genoa",
+      "fl": "Lecce also play on Thursday. Double-chance picks pay low odds even when they land.",
+      "home": "Lecce",
+      "league": "Italy - Serie A",
+      "n": "Lecce lost 0-2 to Juventus; Genoa beat Juventus 2-0.",
+      "p": [
+        31,
+        31,
+        38
+      ],
+      "picks": [
+        {
+          "c": 69,
+          "l": "Away or draw",
+          "w": "Blend 31/31/38: not strong enough for an outright win pick."
+        },
+        {
+          "c": 38,
+          "l": "Away win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 65,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.1 (xG 1.0-1.1)."
+        }
+      ],
+      "time": "18:00",
+      "xg": [
+        1,
+        1.1
+      ],
+      "z": [
+        37,
+        33
+      ]
+    },
+    {
+      "away": "Valencia",
+      "fl": "Valencia are under a new coach (Aguirre). Double-chance picks pay low odds even when they land.",
+      "home": "Elche",
+      "league": "Spain - LaLiga",
+      "n": "Elche won 3-0 at Rayo; Valencia lost 1-2 at home to Villarreal.",
+      "p": [
+        42,
+        28,
+        30
+      ],
+      "picks": [
+        {
+          "c": 70,
+          "l": "Home or draw",
+          "w": "Blend 42/28/30: not strong enough for an outright win pick."
+        },
+        {
+          "c": 42,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 54,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.5 (xG 1.4-1.1)."
+        }
+      ],
+      "time": "18:30",
+      "xg": [
+        1.4,
+        1.1
+      ],
+      "z": [
+        25,
+        33
+      ]
+    },
+    {
+      "away": "Napoli",
+      "fl": "Near coin-flip on the result. Double-chance picks pay low odds even when they land.",
+      "home": "Juventus",
+      "league": "Italy - Serie A",
+      "n": "Juventus lost 0-2 at Genoa; Napoli won 4-1 at Monza.",
+      "p": [
+        38,
+        28,
+        34
+      ],
+      "picks": [
+        {
+          "c": 66,
+          "l": "Home or draw",
+          "w": "Coin-flip on the result, so the slight favourite or a draw is the safest cover."
+        },
+        {
+          "c": 53,
+          "l": "Both teams to score",
+          "w": "Expected total goals 2.6 (xG 1.3-1.3). Goals leans have been unreliable so far."
+        },
+        {
+          "c": 52,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.6 (xG 1.3-1.3)."
+        }
+      ],
+      "time": "20:45",
+      "xg": [
+        1.3,
+        1.3
+      ],
+      "z": [
+        27,
+        27
+      ]
+    },
+    {
+      "away": "Toulouse",
+      "fl": "Double-chance picks pay low odds even when they land.",
+      "home": "Marseille",
+      "league": "France - Ligue 1",
+      "n": "Marseille won 4-3 against Le Havre; Toulouse drew 0-0 with Troyes.",
+      "p": [
+        49,
+        25,
+        26
+      ],
+      "picks": [
+        {
+          "c": 74,
+          "l": "Home or draw",
+          "w": "Blend 49/25/26: not strong enough for an outright win pick."
+        },
+        {
+          "c": 49,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 55,
+          "l": "Both teams to score",
+          "w": "Expected total goals 2.8 (xG 1.7-1.1)."
+        }
+      ],
+      "time": "20:45",
+      "xg": [
+        1.7,
+        1.1
+      ],
+      "z": [
+        18,
+        33
+      ]
+    },
+    {
+      "away": "Real Sociedad",
+      "fl": "Double-chance picks pay low odds even when they land.",
+      "home": "Athletic Club",
+      "league": "Spain - LaLiga",
+      "n": "Athletic beat Getafe 4-0; Sociedad beat Levante 2-1.",
+      "p": [
+        45,
+        26,
+        29
+      ],
+      "picks": [
+        {
+          "c": 71,
+          "l": "Home or draw",
+          "w": "Blend 45/26/29: not strong enough for an outright win pick."
+        },
+        {
+          "c": 45,
+          "l": "Home win",
+          "w": "Outright result if you want a bigger price."
+        },
+        {
+          "c": 52,
+          "l": "Under 2.5 goals",
+          "w": "Expected total goals 2.6 (xG 1.5-1.1)."
+        }
+      ],
+      "time": "21:00",
+      "xg": [
+        1.5,
+        1.1
+      ],
+      "z": [
+        22,
+        33
+      ]
+    }
+  ],
+  "method": "Live win-probability feed blended with recent results and xG estimates",
+  "tz": "WAT",
+  "updated": "2026-10-29"
+}

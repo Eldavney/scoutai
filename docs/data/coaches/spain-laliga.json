@@ -1,0 +1,88 @@
+{
+  "clubs": [
+    {
+      "club": "Alavés",
+      "coach": "Quique Sánchez Flores"
+    },
+    {
+      "club": "Athletic Club",
+      "coach": "Edin Terzić"
+    },
+    {
+      "club": "Atlético Madrid",
+      "coach": "Diego Simeone"
+    },
+    {
+      "club": "Barcelona",
+      "coach": "Hansi Flick"
+    },
+    {
+      "club": "Real Betis",
+      "coach": "Manuel Pellegrini"
+    },
+    {
+      "club": "Celta Vigo",
+      "coach": "Claudio Giráldez"
+    },
+    {
+      "club": "Deportivo La Coruña",
+      "coach": "Antonio Hidalgo"
+    },
+    {
+      "club": "Elche",
+      "coach": "Martín Anselmi"
+    },
+    {
+      "club": "Espanyol",
+      "coach": "Manolo González"
+    },
+    {
+      "club": "Getafe",
+      "coach": "José Bordalás"
+    },
+    {
+      "club": "Levante",
+      "coach": "Luis Castro"
+    },
+    {
+      "club": "Málaga",
+      "coach": "Juanfran Funes"
+    },
+    {
+      "club": "Osasuna",
+      "coach": "Luis Miguel Ramis"
+    },
+    {
+      "club": "Racing Santander",
+      "coach": "José Alberto López"
+    },
+    {
+      "club": "Rayo Vallecano",
+      "coach": "Beñat San José"
+    },
+    {
+      "club": "Real Madrid",
+      "coach": "José Mourinho"
+    },
+    {
+      "club": "Real Sociedad",
+      "coach": "Pellegrino Matarazzo"
+    },
+    {
+      "club": "Sevilla",
+      "coach": "Luis García Plaza"
+    },
+    {
+      "club": "Valencia",
+      "coach": "Javier Aguirre"
+    },
+    {
+      "club": "Villarreal",
+      "coach": "Íñigo Pérez"
+    }
+  ],
+  "league": "Spain - LaLiga",
+  "season": "2026-27",
+  "source": "DAZN España coach guide (updated for Levante and Valencia changes)",
+  "verified": "2026-10-29"
+}

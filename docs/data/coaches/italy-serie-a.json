@@ -1,0 +1,88 @@
+{
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "coach": "Maurizio Sarri"
+    },
+    {
+      "club": "Bologna",
+      "coach": "Raffaele Palladino"
+    },
+    {
+      "club": "Cagliari",
+      "coach": "Fabio Pisacane"
+    },
+    {
+      "club": "Como",
+      "coach": "Cesc Fàbregas"
+    },
+    {
+      "club": "Fiorentina",
+      "coach": "Paolo Vanoli"
+    },
+    {
+      "club": "Frosinone",
+      "coach": "Massimiliano Alvini"
+    },
+    {
+      "club": "Genoa",
+      "coach": "Daniele De Rossi"
+    },
+    {
+      "club": "Inter",
+      "coach": "Cristian Chivu"
+    },
+    {
+      "club": "Juventus",
+      "coach": "Luciano Spalletti"
+    },
+    {
+      "club": "Lazio",
+      "coach": "Gennaro Gattuso"
+    },
+    {
+      "club": "Lecce",
+      "coach": "Eusebio Di Francesco"
+    },
+    {
+      "club": "AC Milan",
+      "coach": "Rúben Amorim"
+    },
+    {
+      "club": "Monza",
+      "coach": "Ivan Jurić"
+    },
+    {
+      "club": "Napoli",
+      "coach": "Massimiliano Allegri"
+    },
+    {
+      "club": "Parma",
+      "coach": "Alberto Gilardino"
+    },
+    {
+      "club": "Roma",
+      "coach": "Gian Piero Gasperini"
+    },
+    {
+      "club": "Sassuolo",
+      "coach": "Alberto Aquilani"
+    },
+    {
+      "club": "Torino",
+      "coach": "Ignazio Abate"
+    },
+    {
+      "club": "Udinese",
+      "coach": "Kosta Runjaić"
+    },
+    {
+      "club": "Venezia",
+      "coach": "Davide Nicola"
+    }
+  ],
+  "league": "Italy - Serie A",
+  "season": "2026-27",
+  "source": "LaPresse preseason list plus Wikipedia in-season changes up to 14 Oct 2026 (Bologna, Fiorentina, Parma, Venezia)",
+  "verified": "2026-10-29"
+}

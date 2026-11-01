@@ -1,0 +1,80 @@
+{
+  "clubs": [
+    {
+      "club": "Ajax",
+      "coach": "Míchel"
+    },
+    {
+      "club": "AZ",
+      "coach": "Leeroy Echteld"
+    },
+    {
+      "club": "ADO Den Haag",
+      "coach": "Robin Peter"
+    },
+    {
+      "club": "SC Cambuur",
+      "coach": "Johan Plat"
+    },
+    {
+      "club": "Excelsior",
+      "coach": "Ruben den Uil"
+    },
+    {
+      "club": "Feyenoord",
+      "coach": "Giovanni van Bronckhorst"
+    },
+    {
+      "club": "Go Ahead Eagles",
+      "coach": "Joseph Oosting"
+    },
+    {
+      "club": "Sparta Rotterdam",
+      "coach": "Rogier Meijer"
+    },
+    {
+      "club": "Telstar",
+      "coach": "Henk Brugge"
+    },
+    {
+      "club": "FC Utrecht",
+      "coach": "Anthony Correia"
+    },
+    {
+      "club": "Fortuna Sittard",
+      "coach": "Danny Buijs"
+    },
+    {
+      "club": "FC Groningen",
+      "coach": "Dick Lukkien"
+    },
+    {
+      "club": "PSV",
+      "coach": "Peter Bosz"
+    },
+    {
+      "club": "NEC",
+      "coach": "Dick Schreuder"
+    },
+    {
+      "club": "PEC Zwolle",
+      "coach": "Henry van der Vegt"
+    },
+    {
+      "club": "Willem II",
+      "coach": "John Stegeman"
+    },
+    {
+      "club": "FC Twente",
+      "coach": "John van den Brom"
+    },
+    {
+      "club": "SC Heerenveen",
+      "coach": "Robin Veldman"
+    }
+  ],
+  "league": "Netherlands - Eredivisie",
+  "season": "2026-27",
+  "source": "VoetbalPrimeur and Pouletips Eredivisie trainer lists, Aug 2026; in-season changes not yet checked",
+  "verified": "2026-10-29"
+}

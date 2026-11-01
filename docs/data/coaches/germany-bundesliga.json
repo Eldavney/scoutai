@@ -1,0 +1,80 @@
+{
+  "clubs": [
+    {
+      "club": "SC Paderborn",
+      "coach": "Ralf Kettemann"
+    },
+    {
+      "club": "SV Elversberg",
+      "coach": "Vincent Wagner"
+    },
+    {
+      "club": "Schalke 04",
+      "coach": "Miron Muslic"
+    },
+    {
+      "club": "Werder Bremen",
+      "coach": "Daniel Thioune"
+    },
+    {
+      "club": "1. FC Köln",
+      "coach": "René Wagner"
+    },
+    {
+      "club": "Hamburger SV",
+      "coach": "Merlin Polzin"
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "coach": "Eugen Polanski"
+    },
+    {
+      "club": "Union Berlin",
+      "coach": "Mauro Lustrinelli"
+    },
+    {
+      "club": "Mainz 05",
+      "coach": "Urs Fischer"
+    },
+    {
+      "club": "FC Augsburg",
+      "coach": "Manuel Baum"
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "coach": "Adi Hütter"
+    },
+    {
+      "club": "SC Freiburg",
+      "coach": "Julian Schuster"
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "coach": "Carles Martínez"
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "coach": "Christian Ilzer"
+    },
+    {
+      "club": "VfB Stuttgart",
+      "coach": "Sebastian Hoeneß"
+    },
+    {
+      "club": "RB Leipzig",
+      "coach": "Martín Demichelis"
+    },
+    {
+      "club": "Borussia Dortmund",
+      "coach": "Niko Kovač"
+    },
+    {
+      "club": "Bayern Munich",
+      "coach": "Vincent Kompany"
+    }
+  ],
+  "league": "Germany - Bundesliga",
+  "season": "2026-27",
+  "source": "Flashscore.de 18 Bundesliga coaches overview (pre-season); in-season changes not yet checked",
+  "verified": "2026-10-29"
+}

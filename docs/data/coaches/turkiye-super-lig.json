@@ -1,0 +1,80 @@
+{
+  "clubs": [
+    {
+      "club": "Amed",
+      "coach": "Besnik Hasi"
+    },
+    {
+      "club": "Beşiktaş",
+      "coach": "Vincenzo Italiano"
+    },
+    {
+      "club": "Alanyaspor",
+      "coach": "Joao Pereira"
+    },
+    {
+      "club": "Rizespor",
+      "coach": "Recep Uçar"
+    },
+    {
+      "club": "Çorum FK",
+      "coach": "Burak Yılmaz"
+    },
+    {
+      "club": "Erzurumspor",
+      "coach": "Serkan Özbalta"
+    },
+    {
+      "club": "Eyüpspor",
+      "coach": "Mustafa Dalcı"
+    },
+    {
+      "club": "Fenerbahçe",
+      "coach": "Vacant: İsmail Kartal left after week 9 (late Oct 2026); successor not confirmed"
+    },
+    {
+      "club": "Galatasaray",
+      "coach": "Okan Buruk"
+    },
+    {
+      "club": "Gaziantep FK",
+      "coach": "Orhan Ak"
+    },
+    {
+      "club": "Gençlerbirliği",
+      "coach": "Bernd Storck"
+    },
+    {
+      "club": "Göztepe",
+      "coach": "Stanimir Stoilov"
+    },
+    {
+      "club": "Başakşehir",
+      "coach": "Nuri Şahin"
+    },
+    {
+      "club": "Kasımpaşa",
+      "coach": "Emre Belözoğlu"
+    },
+    {
+      "club": "Kocaelispor",
+      "coach": "Selçuk İnan"
+    },
+    {
+      "club": "Konyaspor",
+      "coach": "İlhan Palut"
+    },
+    {
+      "club": "Samsunspor",
+      "coach": "Nenad Bjelica"
+    },
+    {
+      "club": "Trabzonspor",
+      "coach": "Thomas Reis"
+    }
+  ],
+  "league": "Türkiye - Süper Lig",
+  "season": "2026-27",
+  "source": "AA pre-season coach list (10 Aug 2026) plus seven in-season changes reported up to 28 Oct 2026",
+  "verified": "2026-10-29"
+}

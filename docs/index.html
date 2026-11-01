@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScoutAI Predictions</title>
+<style>
+:root{--bg:#f5f7f4;--card:#fff;--ink:#14231a;--mute:#5d6b62;--line:#dde4de;--acc:#1f8a4c;--acc2:#e9f6ee;--warn:#b45309;--warnbg:#fef3e2;--home:#1f8a4c;--away:#c2410c;--draw:#8a94a0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1713;--card:#18231c;--ink:#e8f1ea;--mute:#9db0a3;--line:#2a3a2f;--acc:#4ade80;--acc2:#183324;--warn:#fbbf24;--warnbg:#33290f;--home:#4ade80;--away:#fb923c;--draw:#94a3b8}}
+:root[data-theme="dark"]{--bg:#0f1713;--card:#18231c;--ink:#e8f1ea;--mute:#9db0a3;--line:#2a3a2f;--acc:#4ade80;--acc2:#183324;--warn:#fbbf24;--warnbg:#33290f;--home:#4ade80;--away:#fb923c;--draw:#94a3b8}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:560px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:4px 0 2px}.sub{color:var(--mute);margin:0 0 12px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+h3{font-size:13px;margin:14px 0 6px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em}
+.tabs,.days{display:flex;gap:8px;margin-bottom:12px;overflow-x:auto}
+.tab,.day{padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 14px inherit;cursor:pointer;white-space:nowrap}
+.tab{flex:1}.tab.on,.day.on{background:var(--acc);color:#07140c;border-color:var(--acc)}
+.row{display:flex;justify-content:space-between;align-items:center;width:100%;padding:13px 14px;margin-bottom:8px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 16px inherit;cursor:pointer;text-align:left}
+.row small{color:var(--mute);font-weight:400;font-size:13px}.row[disabled]{opacity:.45;cursor:default}
+.star{background:var(--acc2);border-color:var(--acc)}
+.back{background:none;border:0;color:var(--acc);font:600 15px inherit;padding:4px 0 10px;cursor:pointer}
+.mt{font-weight:700}.mt small{display:block;color:var(--mute);font-weight:400;font-size:13px}
+.pick{text-align:center;margin:10px 0 4px}.pick .big{font-size:22px;font-weight:700}
+.badge{display:inline-block;padding:3px 10px;border-radius:99px;background:var(--acc2);color:var(--acc);font-size:13px;font-weight:600}
+.why{color:var(--mute);font-size:14px;margin:6px 0}
+.alts{display:flex;gap:8px;flex-wrap:wrap}
+.chip{flex:1 1 130px;text-align:left;padding:9px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.chip.on{border-color:var(--acc);background:var(--acc2)}.chip b{display:block}.chip span{font-size:12px;color:var(--mute)}
+.bar{display:flex;height:10px;border-radius:99px;overflow:hidden;margin:10px 0 4px;background:var(--line)}.bar i{display:block}
+.leg{display:flex;justify-content:space-between;font-size:12px;color:var(--mute)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center;margin-top:10px}.num{font-size:20px;font-weight:700}.two small{display:block;color:var(--mute);font-size:12px}
+.flag{background:var(--warnbg);color:var(--warn);border-radius:10px;padding:8px 10px;margin-top:8px;font-size:13px}
+details{margin-top:8px;font-size:14px}summary{cursor:pointer;color:var(--acc);font-weight:600}
+.w{color:var(--home)}.l{color:var(--away)}.note{color:var(--mute);font-size:12px;text-align:center;margin:12px 0 20px}
+</style>
+</head>
+<body>
+<main>
+<h1>⚽ ScoutAI Predictions</h1>
+<p class="sub">ScoutAI’s picks for every match in our competitions, with two back-up picks each.</p>
+<div class="tabs"><button class="tab on" id="t1">Predictions</button><button class="tab" id="t2">Record</button><button class="tab" id="t3">Learning</button></div>
+<div id="app"><p class="sub">Loading…</p></div>
+<p class="note">Estimates, not guarantees. Team news is not checked for every match. Bet only what you can afford to lose.</p>
+</main>
+<script>
+const LEAGUES={"England":["Premier League","Championship","EFL Cup"],"Spain":["LaLiga","Copa del Rey"],"Italy":["Serie A"],"Germany":["Bundesliga"],"France":["Ligue 1"],"Portugal":["Liga Portugal"],"Netherlands":["Eredivisie","KNVB Beker"],"Türkiye":["Süper Lig"],"Saudi Arabia":["Saudi Pro League"],"Scotland":["Championship"],"USA":["USL Championship"],"International clubs":["UEFA Champions League","UEFA Europa League","UEFA Conference League","AFC Champions League Two"],"International":["UEFA Nations League","International Friendlies"]};
+const $=id=>document.getElementById(id);
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+let DB=null,REG={},DAYS={},LEARN=null,day="",view="home",league="",tab=1;
+const todayS=()=>new Date().toLocaleDateString("en-CA");
+const tier=c=>c>=65?"High":c>=50?"Medium":"Low";
+const lab=(l,m)=>l.replace(/^Home/,m.home).replace(/^Away/,m.away);
+function coachOf(team){const t=team.toLowerCase();for(const k in REG)for(const c of (REG[k].clubs||[])){const n=c.club.toLowerCase();if(n===t||n.includes(t)||t.includes(n))return c.coach}return null}
+function judge(l,hg,ag){const L=l.toLowerCase(),t=hg+ag;if(L==="home win")return hg>ag;if(L==="away win")return ag>hg;if(L==="draw")return hg===ag;if(L==="home or draw")return hg>=ag;if(L==="away or draw")return ag>=hg;if(L==="over 2.5 goals")return t>2.5;if(L==="under 2.5 goals")return t<2.5;if(L==="both teams to score")return hg>0&&ag>0;if(L==="both teams not to score")return hg===0||ag===0;return null}
+(async()=>{try{const ix=await (await fetch("data/index.json",{cache:"no-store"})).json();
+await Promise.all([...ix.coaches.map(async c=>{REG[c]=await (await fetch("data/coaches/"+c+".json")).json()}),...ix.days.map(async d=>{DAYS[d]=await (await fetch("data/fixtures/"+d+".json",{cache:"no-store"})).json()})]);try{LEARN=await (await fetch("data/learning.json",{cache:"no-store"})).json()}catch(e){}}catch(e){}
+const ds=Object.keys(DAYS).sort(),t=todayS();day=ds.includes(t)?t:(ds.find(x=>x>t)||ds[ds.length-1]||t);render()})();
+
+function dayChips(){const w=el("div","days");Object.keys(DAYS).sort().forEach(d=>{const b=el("button","day"+(d===day?" on":""),new Date(d+"T12:00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"})+(d===todayS()?" · today":""));b.onclick=()=>{day=d;view="home";render()};w.appendChild(b)});return w}
+function render(){const a=$("app");a.textContent="";$("t1").className="tab"+(tab===1?" on":"");$("t2").className="tab"+(tab===2?" on":"");$("t3").className="tab"+(tab===3?" on":"");
+if(tab===3){learning(a);return}if(tab===2){record(a);return}
+if(!Object.keys(DAYS).length){a.appendChild(el("p","sub","No predictions loaded yet. The next scheduled update will load them."));return}
+a.appendChild(dayChips());
+const ms=(DAYS[day]&&DAYS[day].matches)||[];
+if(view==="home")home(a,ms);else{const b=el("button","back","‹ All competitions");b.onclick=()=>{view="home";render()};a.appendChild(b);
+if(view==="best"){a.appendChild(el("h3","","Best picks of the day"));ms.slice().sort((x,y)=>y.picks[0].c-x.picks[0].c).slice(0,20).forEach(m=>a.appendChild(card(m,true)))}
+else{a.appendChild(el("h3","",league.split(" - ")[1]+" · "+league.split(" - ")[0]));const l=ms.filter(m=>m.league===league).sort((x,y)=>x.time.localeCompare(y.time));
+if(!l.length)a.appendChild(el("p","sub","No matches loaded for this competition on this day."));l.forEach(m=>a.appendChild(card(m,false)))}}}
+function home(a,ms){if(ms.length){const s=el("button","row star");s.appendChild(el("span","","⭐ Best picks of the day"));s.appendChild(el("small","","top 20"));s.onclick=()=>{view="best";render()};a.appendChild(s)}
+for(const g in LEAGUES){a.appendChild(el("h3","",g));LEAGUES[g].forEach(n=>{const v=g+" - "+n,c=ms.filter(m=>m.league===v).length;const b=el("button","row");b.disabled=!c;b.appendChild(el("span","",n));b.appendChild(el("small","",c?c+(c>1?" matches":" match"):"none loaded"));b.onclick=()=>{league=v;view="league";render()};a.appendChild(b)})}}
+function card(m,showLg){const c=el("div","card");let i=0;const top=el("div");c.appendChild(top);
+const hd=el("div","mt",m.home+" vs "+m.away);hd.appendChild(el("small","",m.time+" WAT"+(showLg?" · "+m.league.split(" - ")[1]:"")));top.appendChild(hd);const body=el("div");top.appendChild(body);
+const mk=q=>m.res?(judge(q.l,m.res[0],m.res[1])?"✅ ":"❌ "):"";function draw(){body.textContent="";const k=m.picks[i];const p=el("div","pick");p.appendChild(el("div","big",mk(k)+lab(k.l,m)));p.appendChild(el("span","badge",k.c+"% · "+tier(k.c)+" confidence"));body.appendChild(p);body.appendChild(el("div","why",(i===0?"Top pick. ":"Back-up pick. ")+k.w));
+body.appendChild(el("h3","","Other picks"));const w=el("div","alts");m.picks.forEach((q,j)=>{const b=el("button","chip"+(j===i?" on":""));b.appendChild(el("b","",mk(q)+(j===0?"Top: ":"")+lab(q.l,m)));b.appendChild(el("span","",q.c+"%"));b.onclick=()=>{i=j;draw()};w.appendChild(b)});body.appendChild(w)}
+draw();
+const bar=el("div","bar");[[m.p[0],"var(--home)"],[m.p[1],"var(--draw)"],[m.p[2],"var(--away)"]].forEach(([v,col])=>{const x=el("i");x.style.width=v+"%";x.style.background=col;bar.appendChild(x)});c.appendChild(bar);
+const lg=el("div","leg");lg.appendChild(el("span","",m.home+" "+m.p[0]+"%"));lg.appendChild(el("span","","Draw "+m.p[1]+"%"));lg.appendChild(el("span","",m.away+" "+m.p[2]+"%"));c.appendChild(lg);
+const t=el("div","two");[[m.home,m.xg[0],m.z[0]],[m.away,m.xg[1],m.z[1]]].forEach(([n,g,z])=>{const d=el("div");d.appendChild(el("div","num",g.toFixed(1)));d.appendChild(el("small","","expected goals · "+n));d.appendChild(el("small","",z+"% chance of no goal"));t.appendChild(d)});c.appendChild(t);
+if(m.fl)c.appendChild(el("div","flag","⚠️ "+m.fl));
+if(m.res){const j=judge(m.picks[0].l,m.res[0],m.res[1]);const r=el("div","why","Final score "+m.res[0]+"-"+m.res[1]+" · top pick ");r.appendChild(el("b",j?"w":"l",j?"✅ won":"❌ lost"));c.appendChild(r)}
+const dt=el("details");dt.appendChild(el("summary","","Home and away form, coaches"));dt.appendChild(el("p","why",m.n));
+const ch=coachOf(m.home),ca=coachOf(m.away);dt.appendChild(el("p","why","Coaches: "+(ch||"not on file")+" (home) vs "+(ca||"not on file")+" (away). Head-to-head record between them: not compiled yet."));c.appendChild(dt);return c}
+function learning(a){const L=LEARN;if(!L){a.appendChild(el("p","sub","No learning data yet."));return}
+const c=el("div","card");c.appendChild(el("h3","","Prediction quality ("+L.n+" settled matches)"));
+c.appendChild(el("p","why","Brier score "+L.brier+" (a no-skill guess scores "+L.brier_base+"; lower is better). Draws: I predicted "+L.draw_pred+"% on average and "+L.draw_act+"% actually happened."));
+const tbl=(t,o)=>{c.appendChild(el("h3","",t));Object.entries(o).forEach(([k,v])=>c.appendChild(el("div","why",k+": "+v[0]+" of "+v[1]+" ("+Math.round(100*v[0]/v[1])+"%)")))};
+tbl("By pick type",L.by_type);tbl("By confidence",L.by_tier);tbl("By league",L.by_league);a.appendChild(c);
+const l=el("div","card");l.appendChild(el("h3","","What I’ve learned"));(L.lessons||[]).slice().reverse().forEach(x=>l.appendChild(el("p","why",x.d+" · "+x.t)));a.appendChild(l);
+const n=el("div","card");n.appendChild(el("h3","","What I’m changing next"));(L.next||[]).forEach(x=>n.appendChild(el("p","why","• "+x)));
+const k=L.corrections||{};n.appendChild(el("p","why","Automatic corrections now: draw scale "+(k.draw_scale||1)+", goals-pick penalty "+(k.goals_penalty||0)+" points. They switch on after 30 settled matches."));a.appendChild(n)}
+function record(a){const days=Object.keys(DAYS).sort().reverse();let W=0,L=0,aw=0,al=0,pend=0,sa=0;const by={},cards=[];
+days.forEach(d=>{const ms=(DAYS[d].matches||[]).slice().sort((x,y)=>x.time.localeCompare(y.time));let dw=0,dl=0;const rows=[];
+ms.forEach(m=>{if(!m.res){pend++;return}const ok=m.picks.map(p=>judge(p.l,m.res[0],m.res[1]));if(ok[0]){dw++}else{dl++}sa+=m.picks[0].c;ok.forEach(x=>x?aw++:al++);const t=tier(m.picks[0].c);by[t]=by[t]||[0,0];by[t][1]++;if(ok[0])by[t][0]++;
+const r=el("div","why");r.appendChild(el("b","",m.home+" "+m.res[0]+"-"+m.res[1]+" "+m.away));m.picks.forEach((p,j)=>r.appendChild(el("div","",(ok[j]?"✅ ":"❌ ")+(j===0?"Top: ":"Back-up: ")+lab(p.l,m)+" ("+p.c+"%)")));rows.push(r)});
+W+=dw;L+=dl;if(rows.length){const c=el("div","card");c.appendChild(el("h3","",new Date(d+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"short"})+" · top picks "+dw+" ✅ "+dl+" ❌"));rows.forEach(r=>c.appendChild(r));cards.push(c)}});
+const n=W+L,c=el("div","card");c.appendChild(el("h3","","Overall record (top picks)"));
+if(!n)c.appendChild(el("p","sub","No results logged yet. Results are fact-checked and added each morning."));
+else{const x=el("div","num");x.appendChild(el("span","w",W+" ✅"));x.appendChild(document.createTextNode("  "));x.appendChild(el("span","l",L+" ❌"));c.appendChild(x);c.appendChild(el("div","sub",Math.round(100*W/n)+"% hit rate · all picks incl. back-ups: "+aw+" ✅ "+al+" ❌"));
+Object.entries(by).forEach(([t,q])=>c.appendChild(el("div","sub",t+" confidence: "+q[0]+" of "+q[1]+" won")));
+if(n>=5){const avg=sa/n,hr=100*W/n;c.appendChild(el("div","badge",hr<avg-8?"Picks have been overconfident, so confidence is being trimmed.":hr>avg+8?"Picks have beaten their stated confidence.":"Confidence is about right so far."))}}
+c.appendChild(el("p","why",pend+" predictions waiting for results."));a.appendChild(c);cards.forEach(x=>a.appendChild(x))}
+$("t1").onclick=()=>{tab=1;render()};$("t2").onclick=()=>{tab=2;render()};$("t3").onclick=()=>{tab=3;render()};
+</script>
+</body>
+</html>

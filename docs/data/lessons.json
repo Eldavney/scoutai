@@ -1,0 +1,35 @@
+{
+ "updated": "2026-11-01",
+ "lessons": [
+  {
+   "d": "2026-11-01",
+   "t": "Draws are over-rated: I averaged 24% for a draw but only 5 of 29 matches (17%) ended level. Too small a sample to act on, so the automatic draw correction switches on at 30 settled matches."
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Goals picks have been weak (1 of 4). They stay as back-up picks only."
+  },
+  {
+   "d": "2026-11-01",
+   "t": "'Or draw' picks and clear favourites do the work: double chances won 9 of 12 and outright wins 9 of 13. Three heavy favourites (City, Leverkusen, Bayern) failed to win, so even 'safe' picks lose about a third of the time."
+  },
+  {
+   "d": "2026-11-01",
+   "t": "My probabilities beat a no-skill guess only slightly (Brier score 0.572 against 0.608; lower is better). That is real but small. It is the number to improve."
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Bundesliga was the weakest league (3 of 7), with open games such as Leverkusen 2-4 Stuttgart and Bayern 2-2 Dortmund. Watch it, but 7 matches proves nothing."
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Team news was only checked for Barcelona. Every pick should get a line-up and injury check before it goes out."
+  }
+ ],
+ "next": [
+  "Store the data feed's raw win probabilities beside mine, so I can see whether my adjustments help or hurt.",
+  "Check team news on every pick before publishing.",
+  "Cut confidence by 3 points in derbies and top-of-table clashes.",
+  "Re-run this review at 50 and at 100 settled matches, and only change rules the data supports."
+ ]
+}

@@ -1,0 +1,80 @@
+{
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "coach": "Luis Enrique"
+    },
+    {
+      "club": "Marseille",
+      "coach": "Bruno Génesio"
+    },
+    {
+      "club": "Lyon",
+      "coach": "Paulo Fonseca"
+    },
+    {
+      "club": "Lille",
+      "coach": "Davide Ancelotti"
+    },
+    {
+      "club": "Monaco",
+      "coach": "Filipe Luís"
+    },
+    {
+      "club": "Lens",
+      "coach": "Yannick Cahuzac (took over 15 Sep 2026 after Toppmöller left; permanent status unchecked)"
+    },
+    {
+      "club": "Nice",
+      "coach": "Olivier Pantaloni"
+    },
+    {
+      "club": "Rennes",
+      "coach": "Franck Haise"
+    },
+    {
+      "club": "Strasbourg",
+      "coach": "Hugo Oliveira"
+    },
+    {
+      "club": "Toulouse",
+      "coach": "Jens Berthel Askou"
+    },
+    {
+      "club": "Auxerre",
+      "coach": "Will Still"
+    },
+    {
+      "club": "Angers",
+      "coach": "Stéphane Gilli"
+    },
+    {
+      "club": "Lorient",
+      "coach": "Alexandre Dujeux"
+    },
+    {
+      "club": "Brest",
+      "coach": "Julien Lachuer"
+    },
+    {
+      "club": "Paris FC",
+      "coach": "Liam Rosenior"
+    },
+    {
+      "club": "Le Havre",
+      "coach": "Didier Digard"
+    },
+    {
+      "club": "Le Mans",
+      "coach": "Patrick Videira"
+    },
+    {
+      "club": "Troyes",
+      "coach": "Stéphane Dumont"
+    }
+  ],
+  "league": "France - Ligue 1",
+  "season": "2026-27",
+  "source": "Wikipedia 2026-27 Ligue 1 coach changes (to 18 Oct 2026), Ligue 1 and Flashscore.fr; Le Mans and Troyes coaches from a pre-season article",
+  "verified": "2026-10-29"
+}

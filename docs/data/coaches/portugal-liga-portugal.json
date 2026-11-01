@@ -1,0 +1,80 @@
+{
+  "clubs": [
+    {
+      "club": "Porto",
+      "coach": "Francesco Farioli"
+    },
+    {
+      "club": "Sporting CP",
+      "coach": "Rui Borges"
+    },
+    {
+      "club": "Benfica",
+      "coach": "Marco Silva"
+    },
+    {
+      "club": "Braga",
+      "coach": "Carlos Vicens"
+    },
+    {
+      "club": "Vitória de Guimarães",
+      "coach": "Tiago Margarido"
+    },
+    {
+      "club": "Famalicão",
+      "coach": "Carlos Carvalhal"
+    },
+    {
+      "club": "Gil Vicente",
+      "coach": "Luís Pinto"
+    },
+    {
+      "club": "Moreirense",
+      "coach": "Vasco Botelho da Costa"
+    },
+    {
+      "club": "Rio Ave",
+      "coach": "Vasco Seabra"
+    },
+    {
+      "club": "Arouca",
+      "coach": "Vítor Severino"
+    },
+    {
+      "club": "Santa Clara",
+      "coach": "Petit"
+    },
+    {
+      "club": "Estoril Praia",
+      "coach": "Vasco Matos"
+    },
+    {
+      "club": "Casa Pia",
+      "coach": "Filipe Coelho"
+    },
+    {
+      "club": "Alverca",
+      "coach": "Sérgio Ferreira"
+    },
+    {
+      "club": "Nacional",
+      "coach": "Alexandre Santos"
+    },
+    {
+      "club": "Estrela da Amadora",
+      "coach": "Pepa"
+    },
+    {
+      "club": "Académico de Viseu",
+      "coach": "Bruno Pinheiro"
+    },
+    {
+      "club": "Marítimo",
+      "coach": "Mitchell van der Gaag"
+    }
+  ],
+  "league": "Portugal - Liga Portugal",
+  "season": "2026-27",
+  "source": "Wikipedia 2026-27 Primeira Liga coach changes (to early Oct 2026), Flashscore PT, Lusa/DNoticias, Record",
+  "verified": "2026-10-29"
+}

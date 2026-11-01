@@ -1,0 +1,104 @@
+{
+  "clubs": [
+    {
+      "club": "Birmingham City",
+      "coach": "Chris Davies"
+    },
+    {
+      "club": "Blackburn Rovers",
+      "coach": "Tony Mowbray"
+    },
+    {
+      "club": "Bolton Wanderers",
+      "coach": "Steven Schumacher"
+    },
+    {
+      "club": "Bristol City",
+      "coach": "Michael Skubala"
+    },
+    {
+      "club": "Burnley",
+      "coach": "Nicky Hayen"
+    },
+    {
+      "club": "Cardiff City",
+      "coach": "Brian Barry-Murphy"
+    },
+    {
+      "club": "Charlton Athletic",
+      "coach": "Nathan Jones"
+    },
+    {
+      "club": "Derby County",
+      "coach": "John Eustace"
+    },
+    {
+      "club": "Lincoln City",
+      "coach": "Chris Cohen \u0026 Tom Shaw (joint)"
+    },
+    {
+      "club": "Middlesbrough",
+      "coach": "Kim Hellberg"
+    },
+    {
+      "club": "Millwall",
+      "coach": "Alex Neil"
+    },
+    {
+      "club": "Norwich City",
+      "coach": "Philippe Clement"
+    },
+    {
+      "club": "Portsmouth",
+      "coach": "John Mousinho"
+    },
+    {
+      "club": "Preston North End",
+      "coach": "Graham Alexander"
+    },
+    {
+      "club": "Queens Park Rangers",
+      "coach": "Julien Stéphan"
+    },
+    {
+      "club": "Sheffield United",
+      "coach": "Chris Wilder"
+    },
+    {
+      "club": "Southampton",
+      "coach": "Tonda Eckert"
+    },
+    {
+      "club": "Stoke City",
+      "coach": "Mark Robins"
+    },
+    {
+      "club": "Swansea City",
+      "coach": "Vítor Matos"
+    },
+    {
+      "club": "Watford",
+      "coach": "Alessio Dionisi"
+    },
+    {
+      "club": "West Bromwich Albion",
+      "coach": "James Morrison"
+    },
+    {
+      "club": "West Ham United",
+      "coach": "Nuno Espírito Santo"
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "coach": "César Peixoto"
+    },
+    {
+      "club": "Wrexham",
+      "coach": "Phil Parkinson"
+    }
+  ],
+  "league": "England - Championship",
+  "season": "2026-27",
+  "source": "Wikipedia 2026-27 EFL Championship (late Aug 2026 snapshot) plus Preston change of 28 Sep 2026; other in-season changes not yet checked",
+  "verified": "2026-10-29"
+}

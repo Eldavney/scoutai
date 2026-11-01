@@ -1,0 +1,20 @@
+{
+ "days": [
+  "2026-10-29",
+  "2026-10-30",
+  "2026-10-31",
+  "2026-11-01",
+  "2026-11-02"
+ ],
+ "coaches": [
+  "england-championship",
+  "england-premier-league",
+  "france-ligue-1",
+  "germany-bundesliga",
+  "italy-serie-a",
+  "netherlands-eredivisie",
+  "portugal-liga-portugal",
+  "spain-laliga",
+  "turkiye-super-lig"
+ ]
+}

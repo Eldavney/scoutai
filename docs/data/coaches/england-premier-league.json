@@ -1,0 +1,88 @@
+{
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "coach": "Mikel Arteta"
+    },
+    {
+      "club": "Aston Villa",
+      "coach": "Unai Emery"
+    },
+    {
+      "club": "Bournemouth",
+      "coach": "Marco Rose"
+    },
+    {
+      "club": "Brentford",
+      "coach": "Keith Andrews"
+    },
+    {
+      "club": "Brighton",
+      "coach": "Fabian Hürzeler"
+    },
+    {
+      "club": "Chelsea",
+      "coach": "Xabi Alonso"
+    },
+    {
+      "club": "Coventry City",
+      "coach": "Frank Lampard"
+    },
+    {
+      "club": "Crystal Palace",
+      "coach": "Pierre Sage"
+    },
+    {
+      "club": "Everton",
+      "coach": "David Moyes"
+    },
+    {
+      "club": "Fulham",
+      "coach": "Álvaro Arbeloa"
+    },
+    {
+      "club": "Hull City",
+      "coach": "Sergej Jakirovic"
+    },
+    {
+      "club": "Ipswich Town",
+      "coach": "Gary O’Neil"
+    },
+    {
+      "club": "Leeds United",
+      "coach": "Daniel Farke"
+    },
+    {
+      "club": "Liverpool",
+      "coach": "Andoni Iraola"
+    },
+    {
+      "club": "Manchester City",
+      "coach": "Enzo Maresca"
+    },
+    {
+      "club": "Manchester United",
+      "coach": "Michael Carrick"
+    },
+    {
+      "club": "Newcastle United",
+      "coach": "Matthias Jaissle"
+    },
+    {
+      "club": "Nottingham Forest",
+      "coach": "Oliver Glasner"
+    },
+    {
+      "club": "Sunderland",
+      "coach": "Régis Le Bris"
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "coach": "Roberto De Zerbi"
+    }
+  ],
+  "league": "England - Premier League",
+  "season": "2026-27",
+  "source": "premierleague.com manager line-up, 5 Aug 2026",
+  "verified": "2026-10-29"
+}
