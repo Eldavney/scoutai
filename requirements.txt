@@ -1,1 +1,2 @@
 requests>=2.31
+understatapi>=0.7   # optional, only used when USE_UNDERSTAT=1

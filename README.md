@@ -6,7 +6,21 @@ Every morning this project checks real results, marks each pick ✅ or ❌, load
 - **07:00 Lagos time:** gets yesterday's final scores, marks every pick, loads today's and tomorrow's matches, and sends you a phone notification with yesterday's result and today's top 3 picks.
 - **11:30, 14:30, 17:30 and 20:30:** re-checks injuries and line-ups for matches that haven't started and updates the picks.
 - **Never changes a pick after kick-off.** Matches it didn't predict in time are skipped, not filled in afterwards.
-- **Learns:** after 30 settled picks, if its confidence has been too high, it trims future confidence automatically.
+- **Learns privately:** it measures its own accuracy and trims its confidence when it has been too high. The notes live in the `private` folder and are never shown on the website. (If your GitHub repository is public, anyone can still read the files in it, so keep it private if you want the learning notes hidden.)
+
+## How the predictions are built now
+The main driver is each team's **current form and strength**, not its reputation. Data comes from three places:
+- **API-Football** (the paid feed): fixtures, results, last-6 matches, home/away splits, head-to-head, injuries, line-ups, odds, and xG where available.
+- **ClubElo** (free, `clubelo.com`): one strength rating for clubs in every European league. This is what lets Champions League and Europa League ties be compared fairly, because domestic goals per game aren't comparable across leagues.
+- **Understat** (optional, off by default): xG for the top five leagues. Turn it on with `USE_UNDERSTAT=1`. It works by scraping, whose terms are a grey area, so use it at your own risk.
+
+For each match:
+- **Same-league games:** 40% form model (last 6, home/away splits, xG), 20% Elo strength, 40% market.
+- **Cross-league games** (Champions, Europa, Conference League): 15% form, 40% Elo, 45% market.
+- **Head-to-head** (last 6 meetings, capped at 3 points) and **team news** (injuries, capped at 4 points, plus Claude's optional review) are added on top.
+- Any match where my form/strength view and the market differ by 12+ points is flagged.
+Weights live in `backend/config.py`. Set `FORM_MODEL=0` to go back to the older, simpler method. Club names are matched to ClubElo carefully, and a club that can't be matched with confidence is left out rather than guessed.
+Run the checks with `python tests/test_sources.py`.
 
 ## Set-up (about 20 minutes, no coding)
 1. Create a free account at github.com and make a new repository (for example `scoutai`). Upload everything in this folder, keeping the folders as they are.
@@ -25,7 +39,7 @@ League ids come from memory and must be verified. Run:
 Add AFC Champions League Two to `backend/config.py` using the id it prints, and check the others the same way.
 
 ## Things to know
-- This has been tested with simulated data only, not the live API. Expect to fix small things on the first real run.
+- This has been tested with simulated data only, not the live API. The form model pulls about 10 requests per match (more with xG), so a paid data plan is needed for all competitions every day. Expect to fix small things on the first real run.
 - Free data coverage differs by league. Süper Lig, Saudi Pro League, Scottish Championship and USL may have thinner predictions.
 - The site is public if the repository is public. Anyone with the link can see your picks.
 - Results use the 90-minute score, so extra time and penalties don't count.
